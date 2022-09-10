@@ -23,9 +23,11 @@ import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
     private val remoteConfig: FirebaseRemoteConfig = Firebase.remoteConfig
+
     private var urlReady by mutableStateOf(false)
     private var shouldLaunchPlug by mutableStateOf(false)
     private var shouldLaunchWebView by mutableStateOf(false)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         lifecycleScope.launch(Dispatchers.IO) {
@@ -49,7 +51,7 @@ class MainActivity : ComponentActivity() {
                     val url = remoteConfig["url"].asString()
                     if (
                         url.isEmpty() ||
-                        Build.MANUFACTURER.lowercase() == "google" ||
+                        Build.MANUFACTURER.lowercase().contains("google") ||
                         !containsSim(this@MainActivity)
                         || isEmulator()
                     ) {

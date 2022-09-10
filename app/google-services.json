@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "677172202890",
+    "project_id": "ghofdkvf",
+    "storage_bucket": "ghofdkvf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677172202890:android:fa5b5b404e1155a03f0c73",
+        "android_client_info": {
+          "package_name": "earsline.teea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677172202890-nl3p01ms6srim8lkp8gkkrk7r97k1pi0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFTosjxWFSLt31dFXdZ4RCk7Vo3Jh-xsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677172202890-nl3p01ms6srim8lkp8gkkrk7r97k1pi0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
