@@ -24,6 +24,7 @@ fun WinWebView() {
                 ViewGroup.LayoutParams.MATCH_PARENT
             )
             settings.javaScriptEnabled = true
+            webViewClient = WinWebViewClient()
         }
         webView!!
     }, update = { webView = it })
